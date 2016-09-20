@@ -1,0 +1,23 @@
+.forecast-header{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.forecast-content{
+    .temp-container {
+        margin: 0 0 10px 10px;
+    }
+    .main-info{
+        .info{
+            margin: 0 0 10px 10px;
+            .wi {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .value{
+                font-family: 'Droid Sans', sans-serif;
+                margin-left: 5px;
+            }
+        }
+    }
+}

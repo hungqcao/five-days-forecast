@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico">
+    <base href="/">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet">
+
+    <!-- external-styles:css -->
+    <!-- endinject -->
+
+    <!-- app-styles:css -->
+    <!-- endinject -->
+</head>
+
+<body ng-cloak ng-app="app" ng-controller="AppController as vm">
+    <div ng-if="vm.loaded" ui-view class="site-content"></div>
+
+
+    <!-- external-scripts:js -->
+    <!-- endinject -->
+
+    <!-- app-scripts:js -->
+    <!-- endinject -->
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+.header{
+      min-height: 300px;
+}
+.five-days-forecast-container {
+    border-radius: 10px;
+    .day-box{
+        background-color: #262936;
+        background: #323544;
+        border: 1px #1e202b solid;
+        border-radius: 10px;
+        min-height: 200px;
+        padding: 0px;
+    }
+}
+
+.forecast-content {
+    padding: 10px;
+    font-size: 15px;
+
+    .degree {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+    
+    .currently-info {
+        font-size: 20px;
+        padding-left: 75px;
+
+        .wi {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .value{
+            font-family: 'Droid Sans', sans-serif;
+            margin-left: 5px;
+        }
+    }
+    
+    .forecast-icon {
+        background-image: url("/images/icons.png");
+        width: 65px;
+        height: 65px;
+        &.meter{
+            background-position: -109px 60px;
+            width: 40px;
+        }
+        &.partly-cloudy-day {
+            background-position: -287px 0px;
+        }
+
+        &.rain {
+            background-position: -480px 0px;
+        }
+        
+        &.clear-day {
+            background-position: -100px 0px;
+        }
+        
+        &.clear-night {
+            background-position: -190px 0px;
+        }
+        
+        &.snow{
+            background-position: 0px 65px;
+        }
+
+        &.sleet{
+            background-position: 256px 160px;
+        }
+
+        &.wind{
+            background-position: 353px 250px;
+        }
+
+        &.cloudy{
+            background-position: 0px 0px;
+        }
+
+        &.partly-cloudy-night{
+            background-position: -384px 0px;
+        }
+    }
+}

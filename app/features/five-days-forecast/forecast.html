@@ -1,0 +1,32 @@
+<div class="container container-table">
+    <div class="row header">
+        <h1>Five days forecast</h1>
+    </div>
+    <div class="current-box row">
+        <div class="col-sm-1 col-md-3 col-lg-3">&nbsp;</div>
+        <div class="col-sm-10 col-md-6 col-lg-6">
+            <div class="forecast-content">
+                <div class="main-info clearfix">
+                    <div class="forecast-icon {{vm.currently.icon}} pull-left">
+                    </div>
+                    <div class="degree pull-left">
+                        {{ vm.currently.temperature}} <i class="wi wi-degrees"></i> F
+                    </div>
+                </div>
+
+                <div class="currently-info">
+                    <i class="wi wi-humidity"><span class="value">{{ vm.currently.humidity * 100 }}%</span></i>
+                    <i class="wi wi-strong-wind"><span class="value">{{ vm.currently.windSpeed }}mph</span></i>
+                    <i class="wi wi-raindrop"><span class="value">{{ vm.currently.dewPoint }}</span></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="five-days-forecast-container row">
+        <div class="col-md-1 col-lg-1">&nbsp;</div>
+        <div ng-repeat="data in vm.dailySummary.data" class="day-box col-md-2 col-lg-2 col-sm-6">
+            <forecast-day-box model=data />
+        </div>
+    </div>
+</div>

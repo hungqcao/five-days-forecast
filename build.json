@@ -1,0 +1,77 @@
+{
+  "build": {
+    "folders": {
+      "input": {
+        "app": "app",
+        "templates": {
+          "common": "common",
+          "feature": "features"
+        },
+        "fonts": "common/content/font",
+        "images": "common/content/images",
+        "typings": "typings",
+        "sassOptions": {
+          "includePaths": [
+            "configuration",
+            "common/styles"
+          ]
+        }
+      },
+      "output": {
+        "root": "dist",
+        "templates": {
+          "common": "templates/common",
+          "feature": "templates/features"
+        },
+        "scripts": "scripts",
+        "styles": "styles",
+        "fonts": "fonts",
+        "images": "images"
+      }
+    },
+    "files": {
+      "input": {
+        "app": {
+          "index": "index.html",
+          "config": "configuration/app.config.json"
+        },
+        "external": {
+          "scripts": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/angular/angular.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js",
+            "node_modules/angular-ui-grid/ui-grid.min.js",
+            "node_modules/angular-ui-router/release/angular-ui-router.min.js",
+            "dependencies/jquery-ui-1.11.4/jquery-ui.min.js",
+            "node_modules/bootbox/bootbox.min.js",
+            "node_modules/angular-sanitize/angular-sanitize.min.js",
+            "node_modules/lodash/lodash.min.js",
+            "node_modules/moment/min/moment.min.js",
+            "node_modules/angular-animate/angular-animate.min.js",
+            "node_modules/angular-aria/angular-aria.min.js"
+          ],
+          "styles": [
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "node_modules/angular-ui-grid/ui-grid.min.css",
+            "dependencies/jquery-ui-1.11.4/jquery-ui.min.css",
+            "app/common/content/css/weather-icons.css"
+          ],
+          "fonts": [
+            "node_modules/bootstrap/dist/fonts/*"
+          ]
+        }
+      },
+      "output": {
+        "app": {
+          "scripts": "app.js",
+          "styles": "app.css"
+        },
+        "external": {
+          "scripts": "external.js",
+          "styles": "external.css"
+        }
+      }
+    }
+  }
+}

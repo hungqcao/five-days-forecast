@@ -1,0 +1,28 @@
+<div class="forecast-header clearfix">
+    <div class="day pull-left">{{ vm.currentWeekDayString }}</div>
+    <div class="date pull-right">{{ vm.currentMonthDayString }}</div>
+</div>
+<div class="forecast-content">
+    <div class="main-info clearfix">
+        <div class="forecast-icon {{vm.model.icon}} pull-left">
+        </div>
+        <div class="info pull-left">
+            <i class="wi wi-humidity"><span class="value">{{ vm.displayHumidity }}%</span></i>
+            <i class="wi wi-strong-wind"><span class="value">{{ vm.model.windSpeed }}mph</span></i>
+            <i class="wi wi-raindrop"><span class="value">{{ vm.model.dewPoint }}</span></i>
+        </div>
+    </div>
+
+    <div class="temp-wrapper">
+        <div class="forecast-icon meter pull-left">
+        </div>
+        <div class="temp-container pull-left">
+            <div class="max-temp">
+                {{ vm.displayMaxTemp }} <i class="wi wi-degrees"></i> F (at {{ vm.displayMaxTime }}h)
+            </div>
+            <div class="min-temp">
+                {{ vm.displayMinTemp }} <i class="wi wi-degrees"></i> F (at {{ vm.displayMinTime }}h)
+            </div>
+        </div>
+    </div>
+</div>

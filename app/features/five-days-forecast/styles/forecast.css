@@ -1,0 +1,53 @@
+.header {
+  min-height: 300px; }
+
+.five-days-forecast-container {
+  border-radius: 10px; }
+  .five-days-forecast-container .day-box {
+    background-color: #262936;
+    background: #323544;
+    border: 1px #1e202b solid;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 0px; }
+
+.forecast-content {
+  padding: 10px;
+  font-size: 15px; }
+  .forecast-content .degree {
+    font-size: 50px;
+    margin-left: 10px; }
+  .forecast-content .currently-info {
+    font-size: 20px;
+    padding-left: 75px; }
+    .forecast-content .currently-info .wi {
+      display: block;
+      margin-bottom: 5px; }
+    .forecast-content .currently-info .value {
+      font-family: 'Droid Sans', sans-serif;
+      margin-left: 5px; }
+  .forecast-content .forecast-icon {
+    background-image: url("/images/icons.png");
+    width: 65px;
+    height: 65px; }
+    .forecast-content .forecast-icon.meter {
+      background-position: -109px 60px;
+      width: 40px; }
+    .forecast-content .forecast-icon.partly-cloudy-day {
+      background-position: -287px 0px; }
+    .forecast-content .forecast-icon.rain {
+      background-position: -480px 0px; }
+    .forecast-content .forecast-icon.clear-day {
+      background-position: -100px 0px; }
+    .forecast-content .forecast-icon.clear-night {
+      background-position: -190px 0px; }
+    .forecast-content .forecast-icon.snow {
+      background-position: 0px 65px; }
+    .forecast-content .forecast-icon.sleet {
+      background-position: 256px 160px; }
+    .forecast-content .forecast-icon.wind {
+      background-position: 353px 250px; }
+    .forecast-content .forecast-icon.cloudy {
+      background-position: 0px 0px; }
+    .forecast-content .forecast-icon.partly-cloudy-night {
+      background-position: -384px 0px; }

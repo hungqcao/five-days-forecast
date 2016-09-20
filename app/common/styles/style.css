@@ -1,0 +1,10 @@
+html, body, .container-table, .site-content {
+  height: 100%; }
+
+body {
+  color: #bfc1c8;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b; }
