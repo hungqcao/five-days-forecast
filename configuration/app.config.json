@@ -1,0 +1,4 @@
+{
+    "apiHost": "http://localhost:4000/api/values/forecast/",
+    "apiKey": "97f15108a86dc8b5ec29ce8294e9998c"
+}
